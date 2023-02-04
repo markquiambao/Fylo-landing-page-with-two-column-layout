@@ -1,0 +1,262 @@
+:root {
+  /* ## Colors ### Primary */
+--Very-Dark-Blue: hsl(243, 87%, 12%);
+--Desaturated-Blue: hsl(238, 22%, 44%);
+/* 
+### Accent */
+--Bright-Blue: hsl(224, 93%, 58%);
+--Moderate-Cyan: hsl(170, 45%, 43%);
+
+/* ### Neutral */
+--Light-Grayish-Blue: hsl(240, 75%, 98%);
+--Light-Gray: hsl(0, 0%, 75%);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+main {
+  width: 100%;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.5em;
+  color: var(--Very-Dark-Blue);
+  margin-bottom: .5rem;
+}
+
+p {
+  color: var(--Very-Dark-Blue);
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+.section-p{
+   padding: 0em 10em;
+}
+
+.section-m {
+  margin: 2em;
+}
+.navbar {
+  display:flex;
+  justify-content: space-between;
+}
+.logo {
+  height: 100%;
+  width: 75%;
+}
+
+.menu {
+  display: flex;
+  width: 20%;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-links li {
+  list-style: none;
+}
+.nav-links li a{
+  text-decoration: none;
+  color: var(--Very-Dark-Blue);
+}
+
+.hero {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  min-width: 375px;
+}
+
+.hero-img {
+   overflow: hidden;
+}
+.hero-img img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: contain;
+}
+
+.inputs {
+  display: flex;
+  gap: 1em;
+}
+
+.inputs input[type="email"] {
+  height :3em;
+  width: 20em;
+  border-radius: 4px;
+  border-color: grey;
+}
+::placeholder {
+  padding-left: 5px;
+  opacity: .80;
+}
+.hero-button {
+  width: 15em;
+  background-color: var(--Bright-Blue);
+  color: var(--Light-Grayish-Blue);
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.hero-button:hover, .banner-btn:hover {
+  background-color: hsl(224, 82%, 31%);
+}
+
+
+/*stay-productive*/
+
+.stay-productive {
+  
+  min-height: 80vh;
+  background-image: url(../img/bg-curve-desktop.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 15rem;
+  display: flex;
+  gap: 15rem;
+}
+
+.testimoinal-headings {
+  padding-top: 5rem;
+  min-width: 375px;
+}
+.testimoinal-headings h1 {
+  margin-bottom: 1em;
+}
+.hero-img-2 img {
+  height: 32rem;
+  width: 32rem;
+  padding-top: 10rem;
+  object-fit: contain;
+}
+
+.hero-img2 {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.testimoinal-headings h3 {
+  color: var(--Moderate-Cyan);
+  cursor: pointer;
+}
+.testimoinal-headings span {
+  display: inline-block;
+  border-bottom:2px solid var(--Moderate-Cyan);
+  padding-bottom:2px;
+}
+
+.testimoinal-headings h3 > span > i {
+ color: var(--Moderate-Cyan);
+ height: .1em;
+}
+
+.testimonials {
+  background-color: #FFF;
+  padding: 2rem;
+  width: 50%;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  margin-top: 4em;
+}
+
+
+.author-testimonials {
+  display: flex;
+  
+}
+
+.author-credentials {
+  display: flex;
+  flex-direction: column;
+  gap:0;
+}
+
+.auth-avatar {
+  height: 100%;
+  width: 100%;
+}
+
+.author-testimonials img {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50px;
+  vertical-align: middle;
+}
+
+.author-credentials p {
+  margin: 0em .5em -1em .5em;
+  font-size: .6em;
+}
+
+.author-credentials p:nth-child(1) {
+  font-weight: 700;
+}
+
+
+@media screen and (max-width: 768px){
+  body {
+    height: 100vh;
+  }
+  main {
+    width: 72rem;
+  }
+  .navbar {
+    margin-left: 0;
+    width: 80%;
+  }
+  .logo {
+    width: 40%;
+  }
+  .logo img {
+    height: 5rem;
+  }
+  .menu {
+    width: 30%;
+  }
+  .nav-links {
+    font-size: 2.5rem;
+    width: 70%;
+  }
+  .nav-links li {
+    width: 100%;
+  }
+  /* .nav-links li a {
+    padding: 1rem;
+  } */
+  .section-p {
+    padding: 3rem;
+  }
+  .hero {
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+   
+  }
+}
+
